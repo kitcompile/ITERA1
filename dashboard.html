@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>A Little Space to Breathe</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site">
+      <a class="brand" href="#home">A Little Space to Breathe</a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#letter">Write a Letter</a></li>
+          <li><a href="#help">Get Help</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+
+      <section class="view" id="view-home" aria-labelledby="h-home">
+        <div class="hero">
+          <div>
+            <h1 id="h-home">You don't have to be okay all the time.</h1>
+            <p class="lede">Welcome to a little corner of the internet where you can pause, breathe, and let your feelings exist.</p>
+            <p>Life can feel overwhelming. Some days you may feel lost, exhausted, lonely, or unable to explain what's going on inside your mind. Sometimes you just need a place to let it out without worrying about being judged.</p>
+            <p>Write what you can't say out loud. Share the thoughts you've been keeping to yourself, or simply take a moment to breathe. You don't need to explain everything or pretend to be okay here.</p>
+            <p>You're allowed to feel what you feel. You deserve to be heard, and you don't have to face everything alone. Take your time. You're welcome here.</p>
+            <div class="btns">
+              <a class="btn" href="#letter">Write a letter</a>
+              <a class="btn alt" href="#help">Find support</a>
+            </div>
+          </div>
+          <div>
+            <div class="breath" role="img" aria-label="A softly pulsing circle that grows and shrinks slowly, to breathe along with">
+              <div class="ring"></div>
+              <div class="orb"></div>
+            </div>
+            <div class="cue" aria-hidden="true">
+              <span class="in">breathe in</span>
+              <span class="out">and let it go</span>
+            </div>
+            <p class="breath-note">Breathe along for as long as you like.</p>
+          </div>
+        </div>
+
+        <div class="tagline">
+          <p>One breath. One thought. One day at a time.</p>
+        </div>
+
+        <div class="words">
+          <div>
+            <h2 style="margin-bottom:.3em">Words you might need today</h2>
+            <blockquote id="quote" aria-live="polite">Progress isn't always a straight line.</blockquote>
+          </div>
+          <button class="btn alt" id="newQuote" type="button">Show another</button>
+        </div>
+      </section>
+
+      <section class="view" id="view-letter" aria-labelledby="h-letter" hidden>
+        <div class="page-head">
+          <h1 id="h-letter">Dear you,</h1>
+          <p class="lede">Sometimes we carry so many thoughts that we don't know where to put them. Here, you can let them out.</p>
+          <p>Write about what hurts. Write about what makes you tired. Write about the things you wish people understood about you. You can write to yourself, to someone you miss, to someone who hurt you, or to no one in particular. There's no right or wrong way, and it doesn't have to make sense.</p>
+        </div>
+
+        <div class="letter">
+          <fieldset>
+            <legend>Who is this letter for? (optional)</legend>
+            <div class="chips">
+              <span>
+                <input type="radio" name="to" id="to1" value="myself">
+                <label for="to1">Myself</label>
+              </span>
+              <span>
+                <input type="radio" name="to" id="to2" value="someone I miss">
+                <label for="to2">Someone I miss</label>
+              </span>
+              <span>
+                <input type="radio" name="to" id="to3" value="someone who hurt me">
+                <label for="to3">Someone who hurt me</label>
+              </span>
+              <span>
+                <input type="radio" name="to" id="to4" value="no one in particular" checked>
+                <label for="to4">No one in particular</label>
+              </span>
+            </div>
+          </fieldset>
+          <p class="salute" id="salute">What would you like to let out today?</p>
+          <label for="body" class="sr" style="position:absolute;left:-999px">Your letter</label>
+          <textarea id="body" placeholder="Start wherever you feel comfortable."></textarea>
+          <div class="btns" style="margin-top:1rem">
+            <button class="btn" id="copy" type="button">Copy my letter</button>
+            <button class="btn alt" id="clear" type="button">Clear the page</button>
+          </div>
+          <p class="status" id="status" role="status"></p>
+        </div>
+
+        <div class="privacy">
+          <p><strong>Your letter stays with you.</strong> Nothing you write here is sent, saved, or read by anyone. It lives only on this page, so if you close or refresh it, it's gone. If you want to keep it, use "Copy my letter" and paste it somewhere private.</p>
+        </div>
+        <div class="urgent">
+          <p>If you're in immediate danger or thinking about ending your life, please don't rely on this page. Contact local emergency services, a crisis line, or someone near you right now. <a href="#help">See support options.</a></p>
+        </div>
+      </section>
+
+      <section class="view" id="view-help" aria-labelledby="h-help" hidden>
+        <div class="page-head">
+          <h1 id="h-help">It's okay to reach out.</h1>
+          <p class="lede">You don't have to figure everything out on your own. If your feelings become too heavy to carry, consider reaching out to someone you trust or a mental health professional. You deserve support, understanding, and care.</p>
+        </div>
+
+        <div class="card">
+          <h2>Philippines: NCMH Crisis Hotline</h2>
+          <p>National Center for Mental Health numbers listed in Philippine mental health resources. Tap a number to call on your phone.</p>
+          <ul class="phones">
+            <li><a href="tel:1553">1553<small>Nationwide landline, toll-free</small></a></li>
+            <li><a href="tel:+639178998727">0917-899-8727<small>Mobile</small></a></li>
+            <li><a href="tel:+639663514518">0966-351-4518<small>Mobile</small></a></li>
+            <li><a href="tel:+639190571553">0919-057-1553<small>Mobile</small></a></li>
+          </ul>
+          <p style="margin:0;font-size:.95rem;color:var(--muted)">Numbers and availability can change. For the latest, check the <a href="https://ncmh.gov.ph/" rel="noopener">National Center for Mental Health</a> or the <a href="https://ehotlines.e.gov.ph/" rel="noopener">Philippine government emergency hotlines</a>.</p>
+        </div>
+
+        <div class="urgent">
+          <p><strong>If you are in immediate danger,</strong> contact local emergency services or go to the nearest emergency department. A letter or an online community can't respond in an emergency.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>About depression</h3>
+            <p>Depression is a real mental health condition, not a personal weakness or something you can simply "snap out of." It can look different for everyone.</p>
+            <p>Common experiences include a low or empty mood, losing interest in things you used to enjoy, changes in sleep or appetite, constant tiredness, trouble concentrating, and feeling worthless or hopeless.</p>
+            <p style="margin:0">If these have lasted for a couple of weeks or are getting in the way of daily life, a doctor or mental health professional can help. This page can't diagnose anyone.</p>
+          </div>
+          <div class="card">
+            <h3>Little things that might help</h3>
+            <p>These aren't cures. They're small, optional supports for hard days.</p>
+            <ul class="soft">
+              <li>Write it down, in a letter or a journal</li>
+              <li>Take a short walk or open a window</li>
+              <li>Listen to a song that feels like company</li>
+              <li>Let yourself rest without guilt</li>
+              <li>Message or sit near someone you trust</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-community" aria-labelledby="h-comm" hidden>
+        <div class="page-head">
+          <h1 id="h-comm">Find your people. Find your place.</h1>
+          <p class="lede">You don't always need advice. Sometimes you just need someone to talk to, someone to laugh with, or someone who makes you feel included.</p>
+          <p>Join our community to connect with others, share your interests, and build friendships at your own pace. Whether you feel like talking, listening, playing games, or just being around people, there's room for you.</p>
+          <p>You don't have to share your struggles to belong. Come as you are and take part whenever you feel ready.</p>
+        </div>
+
+        <div class="card" style="margin-bottom:1.25rem">
+          <h2 id="serverName">Our community server</h2>
+          <p id="serverNote">The invite link is coming soon. Please check back.</p>
+          <a class="btn" id="invite" href="#community" aria-disabled="true">Join the community</a>
+        </div>
+
+        <div class="card">
+          <h3>Community guidelines</h3>
+          <ul class="soft rules">
+            <li>No bullying, harassment, discrimination, or judgment.</li>
+            <li>Respect everyone's boundaries and privacy.</li>
+            <li>Never pressure anyone to share personal experiences.</li>
+            <li>Don't share another member's private messages or personal information without permission.</li>
+            <li>Members are peers, not necessarily trained mental health professionals.</li>
+            <li>Moderators respond to harmful content and to anyone who shares they are in crisis.</li>
+            <li>The server is not an emergency service. For urgent help, see <a href="#help">Get Help</a>.</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>This website offers emotional expression, mental health awareness, and community connection. It is not a substitute for professional mental health care or emergency services. You deserve support beyond this website, too.</p>
+      <p><em>If you can't say it, write it. If you need someone, reach out. And if you're not ready to talk, that's okay, too.</em></p>
+    </footer>
+
+    <script>
+      var COMMUNITY_NAME = "";
+      var INVITE_URL = "";
+
+      var views = ['home', 'letter', 'help', 'community'];
+      var titles = {
+        home: 'A Little Space to Breathe',
+        letter: 'Write a Letter',
+        help: 'Get Help',
+        community: 'Community'
+      };
+
+      function show() {
+        var h = (location.hash || '#home').slice(1);
+        if (views.indexOf(h) < 0) h = 'home';
+        views.forEach(function (v) {
+          document.getElementById('view-' + v).hidden = v !== h;
+        });
+        document.querySelectorAll('nav a').forEach(function (a) {
+          if (a.getAttribute('href') === '#' + h) {
+            a.setAttribute('aria-current', 'page');
+          } else {
+            a.removeAttribute('aria-current');
+          }
+        });
+        document.title = (h === 'home' ? '' : titles[h] + ' · ') + 'A Little Space to Breathe';
+        window.scrollTo(0, 0);
+      }
+      window.addEventListener('hashchange', show);
+      show();
+
+      var words = [
+        "Progress isn't always a straight line.",
+        "You don't have to solve everything today.",
+        "Being tired doesn't mean you're failing.",
+        "Small steps still count.",
+        "You are allowed to take up space.",
+        "Rest is not something you have to earn.",
+        "Hard days don't erase the good ones.",
+        "You don't have to explain your feelings to deserve kindness."
+      ];
+      var qi = 0, q = document.getElementById('quote');
+      document.getElementById('newQuote').addEventListener('click', function () {
+        qi = (qi + 1) % words.length;
+        q.textContent = words[qi];
+      });
+
+      var body = document.getElementById('body'),
+          status = document.getElementById('status'),
+          salute = document.getElementById('salute');
+      document.querySelectorAll('input[name=to]').forEach(function (r) {
+        r.addEventListener('change', function () {
+          salute.textContent = r.value === 'no one in particular'
+            ? 'What would you like to let out today?'
+            : 'Dear ' + r.value + ',';
+        });
+      });
+      function say(t) {
+        status.textContent = t;
+      }
+      document.getElementById('copy').addEventListener('click', function () {
+        var text = body.value.trim();
+        if (!text) {
+          say('There is nothing on the page yet. Write whatever you like, then copy it.');
+          return;
+        }
+        var done = function () {
+          say('Copied. Paste it somewhere private to keep it.');
+        };
+        var fallback = function () {
+          body.focus();
+          body.select();
+          say('Your letter is selected. Copy it with your device\'s copy command.');
+        };
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(body.value).then(done, fallback);
+          } else {
+            fallback();
+          }
+        } catch (e) {
+          fallback();
+        }
+      });
+      document.getElementById('clear').addEventListener('click', function () {
+        if (body.value && !confirm('Clear the page? This can\'t be undone.')) return;
+        body.value = '';
+        say('The page is clear.');
+        body.focus();
+      });
+
+      if (COMMUNITY_NAME) document.getElementById('serverName').textContent = COMMUNITY_NAME;
+      if (INVITE_URL) {
+        var a = document.getElementById('invite');
+        a.href = INVITE_URL;
+        a.removeAttribute('aria-disabled');
+        a.target = '_blank';
+        a.rel = 'noopener';
+        document.getElementById('serverNote').textContent = 'Everyone is welcome. Come as you are.';
+      }
+      document.getElementById('invite').addEventListener('click', function (e) {
+        if (this.getAttribute('aria-disabled') === 'true') e.preventDefault();
+      });
+    </script>
+  </body>
+</html>
